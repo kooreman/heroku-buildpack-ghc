@@ -239,6 +239,7 @@ cabal sandbox init
 
 cd $BUILD_DIR
 cabal sandbox init --sandbox $WORKING_HOME/.cabal-sandbox
+cabal sandbox add-source packages/snaplet-persistent/
 
 if [ -e $CACHE_DIR/.cabal-sandbox ]; then
   echo "-----> Restoring cached cabal sandbox"
